@@ -1,5 +1,5 @@
 # The sample base tag is mutable. Pin the published workload digest for live recovery.
-FROM python:3.12-slim-bookworm
+FROM python:3.15-slim-bookworm
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 WORKDIR /app
 COPY --chown=10001:10001 app.py /app/app.py
